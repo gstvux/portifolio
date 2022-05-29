@@ -1,0 +1,308 @@
+$color-brand-yellow-100: #fff8db;
+$color-brand-yellow-200: #ffec9e;
+$color-brand-yellow-300: #ffd83d;
+$color-brand-yellow-400: #fac800;
+$color-brand-yellow-500: #c79f00;
+$color-brand-yellow-600: #806600;
+
+$color-brand-gray-100: #ffffff;
+$color-brand-gray-200: #d6d6d6;
+$color-brand-gray-300: #8c8c8c;
+$color-brand-gray-400: #636363;
+$color-brand-gray-500: #3d3d3d;
+$color-brand-gray-600: #141414;
+
+$color-brand-orange-100: #fdf2e7;
+$color-brand-orange-200: #fbdfc6;
+$color-brand-orange-300: #f6b174;
+$color-brand-orange-400: #f1882d;
+$color-brand-orange-500: #c4630d;
+$color-brand-orange-600: #a3520b;
+
+$color-brand-purple-100: #ebe1f4;
+$color-brand-purple-200: #cdb5e3;
+$color-brand-purple-300: #a579cd;
+$color-brand-purple-400: #7c42b3;
+$color-brand-purple-500: #532c77;
+$color-brand-purple-600: #3e2159;
+
+$color-brand-ocean-100: #d2eeee;
+$color-brand-ocean-200: #ade0e1;
+$color-brand-ocean-300: #6ec8c9;
+$color-brand-ocean-400: #42b1b3;
+$color-brand-ocean-500: #2c7677;
+$color-brand-ocean-600: #215859;
+
+$color-brand-blue-100: #d5e0eb;
+$color-brand-blue-200: #a8bed6;
+$color-brand-blue-300: #7b9dc1;
+$color-brand-blue-400: #4b74a0;
+$color-brand-blue-500: #314c68;
+$color-brand-blue-600: #24374c;
+
+@mixin text-style-body-1-normal {
+        font-size:12px;
+        font-family:"Open Sans";
+        font-weight:normal;
+        font-style:normal;
+        text-decoration:none;
+}
+@mixin text-style-body-1-bold {
+        font-size:12px;
+        font-family:"Open Sans";
+        font-weight:bolder;
+        font-style:normal;
+        text-decoration:none;
+}
+@mixin text-style-body-1-oblique {
+        font-size:12px;
+        font-family:"Open Sans";
+        font-weight:normal;
+        font-style:italic;
+        text-decoration:none;
+}
+@mixin text-style-body-2-normal {
+        font-size:14px;
+        font-family:"Open Sans";
+        font-weight:normal;
+        font-style:normal;
+        text-decoration:none;
+}
+@mixin text-style-body-2-bold {
+        font-size:14px;
+        font-family:"Open Sans";
+        font-weight:bolder;
+        font-style:normal;
+        text-decoration:none;
+}
+@mixin text-style-body-2-oblique {
+        font-size:14px;
+        font-family:"Open Sans";
+        font-weight:normal;
+        font-style:italic;
+        text-decoration:none;
+}
+@mixin text-style-body-3-normal {
+        font-size:16px;
+        font-family:"Open Sans";
+        font-weight:normal;
+        font-style:normal;
+        text-decoration:none;
+}
+@mixin text-style-body-3-bold {
+        font-size:16px;
+        font-family:"Open Sans";
+        font-weight:bolder;
+        font-style:normal;
+        text-decoration:none;
+}
+@mixin text-style-body-3-oblique {
+        font-size:16px;
+        font-family:"Open Sans";
+        font-weight:normal;
+        font-style:italic;
+        text-decoration:none;
+}
+@mixin text-style-body-4-normal {
+        font-size:18px;
+        font-family:"Open Sans";
+        font-weight:normal;
+        font-style:normal;
+        text-decoration:none;
+}
+@mixin text-style-body-4-bold {
+        font-size:18px;
+        font-family:"Open Sans";
+        font-weight:bolder;
+        font-style:normal;
+        text-decoration:none;
+}
+@mixin text-style-body-4-oblique {
+        font-size:18px;
+        font-family:"Open Sans";
+        font-weight:normal;
+        font-style:italic;
+        text-decoration:none;
+}
+@mixin text-style-title-1-normal {
+        font-size:20px;
+        font-family:"Roboto";
+        font-weight:normal;
+        font-style:normal;
+        text-decoration:none;
+}
+@mixin text-style-title-1-bold {
+        font-size:20px;
+        font-family:"Archivo";
+        font-weight:bolder;
+        font-style:normal;
+        text-decoration:none;
+}
+@mixin text-style-title-2-normal {
+        font-size:24px;
+        font-family:"Roboto";
+        font-weight:normal;
+        font-style:normal;
+        text-decoration:none;
+}
+@mixin text-style-title-2-bold {
+        font-size:24px;
+        font-family:"Archivo";
+        font-weight:bolder;
+        font-style:normal;
+        text-decoration:none;
+}
+@mixin text-style-title-3-normal {
+        font-size:28px;
+        font-family:"Roboto";
+        font-weight:normal;
+        font-style:normal;
+        text-decoration:none;
+}
+@mixin text-style-title-3-bold {
+        font-size:28px;
+        font-family:"Archivo";
+        font-weight:bolder;
+        font-style:normal;
+        text-decoration:none;
+}
+@mixin text-style-title-4-normal {
+        font-size:32px;
+        font-family:"Roboto";
+        font-weight:normal;
+        font-style:normal;
+        text-decoration:none;
+}
+@mixin text-style-title-4-bold {
+        font-size:32px;
+        font-family:"Archivo";
+        font-weight:bolder;
+        font-style:normal;
+        text-decoration:none;
+}
+@mixin text-style-title-5-normal {
+        font-size:36px;
+        font-family:"Roboto";
+        font-weight:normal;
+        font-style:normal;
+        text-decoration:none;
+}
+@mixin text-style-title-5-bold {
+        font-size:36px;
+        font-family:"Archivo";
+        font-weight:bolder;
+        font-style:normal;
+        text-decoration:none;
+}
+@mixin text-style-title-6-normal {
+        font-size:40px;
+        font-family:"Archivo";
+        font-weight:normal;
+        font-style:normal;
+        text-decoration:none;
+}
+@mixin text-style-title-6-bold {
+        font-size:40px;
+        font-family:"Archivo";
+        font-weight:bolder;
+        font-style:normal;
+        text-decoration:none;
+}
+@mixin text-style-title-7-normal {
+        font-size:44px;
+        font-family:"Archivo";
+        font-weight:normal;
+        font-style:normal;
+        text-decoration:none;
+}
+@mixin text-style-title-7-bold {
+        font-size:44px;
+        font-family:"Archivo";
+        font-weight:bolder;
+        font-style:normal;
+        text-decoration:none;
+}
+@mixin text-style-title-8-normal {
+        font-size:48px;
+        font-family:"Archivo";
+        font-weight:normal;
+        font-style:normal;
+        text-decoration:none;
+}
+@mixin text-style-title-8-bold {
+        font-size:48px;
+        font-family:"Archivo";
+        font-weight:bolder;
+        font-style:normal;
+        text-decoration:none;
+}
+@mixin text-style-marketing-1-normal {
+        font-size:64px;
+        font-family:"Archivo";
+        font-weight:normal;
+        font-style:normal;
+        text-decoration:none;
+}
+@mixin text-style-marketing-1-bold {
+        font-size:64px;
+        font-family:"Archivo";
+        font-weight:bolder;
+        font-style:normal;
+        text-decoration:none;
+}
+@mixin text-style-marketing-2-normal {
+        font-size:80px;
+        font-family:"Archivo";
+        font-weight:normal;
+        font-style:normal;
+        text-decoration:none;
+}
+@mixin text-style-marketing-2-bold {
+        font-size:80px;
+        font-family:"Archivo";
+        font-weight:bolder;
+        font-style:normal;
+        text-decoration:none;
+}
+@mixin text-style-marketing-3-normal {
+        font-size:96px;
+        font-family:"Archivo";
+        font-weight:normal;
+        font-style:normal;
+        text-decoration:none;
+}
+@mixin text-style-marketing-3-bold {
+        font-size:96px;
+        font-family:"Archivo";
+        font-weight:bolder;
+        font-style:normal;
+        text-decoration:none;
+}
+@mixin text-style-marketing-4-normal {
+        font-size:112px;
+        font-family:"Archivo";
+        font-weight:normal;
+        font-style:normal;
+        text-decoration:none;
+}
+@mixin text-style-marketing-4-bold {
+        font-size:112px;
+        font-family:"Archivo";
+        font-weight:bolder;
+        font-style:normal;
+        text-decoration:none;
+}
+@mixin text-style-marketing-5-normal {
+        font-size:128px;
+        font-family:"Archivo";
+        font-weight:normal;
+        font-style:normal;
+        text-decoration:none;
+}
+@mixin text-style-marketing-5-bold {
+        font-size:128px;
+        font-family:"Archivo";
+        font-weight:bolder;
+        font-style:normal;
+        text-decoration:none;
+}
