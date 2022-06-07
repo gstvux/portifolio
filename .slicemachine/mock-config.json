@@ -1,0 +1,12 @@
+{
+  "_cts": {
+    "home-page": {}
+  },
+  "slices": {
+    "Hero": {
+      "default": {
+        "primary": {}
+      }
+    }
+  }
+}

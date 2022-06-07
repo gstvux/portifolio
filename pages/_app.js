@@ -1,20 +1,25 @@
-import styles from '../styles/styles.scss'
-// import App from 'next/app'
+import Link from 'next/link'
+import { PrismicProvider } from '@prismicio/react'
+import { PrismicPreview } from '@prismicio/next'
+import { linkResolver, repositoryName } from '../prismicio'
 
-function GstvWebsite({ Component, pageProps }) {
-    return <Component {...pageProps} />
-  }
-  
-  // Only uncomment this method if you have blocking data requirements for
-  // every single page in your application. This disables the ability to
-  // perform automatic static optimization, causing every page in your app to
-  // be server-side rendered.
-  //
-  // MyApp.getInitialProps = async (appContext) => {
-  //   // calls page's `getInitialProps` and fills `appProps.pageProps`
-  //   const appProps = await App.getInitialProps(appContext);
-  //
-  //   return { ...appProps }
-  // }
-  
-  export default GstvWebsite
+import styles from '../styles/styles.scss'
+
+export default function App({ Component, pageProps }) {
+  return (
+    <PrismicProvider
+      linkResolver={linkResolver}
+      internalLinkComponent={({ href, children, ...props }) => (
+        <Link href={href}>
+          <a {...props}>
+            {children}
+          </a>
+        </Link>
+      )}
+    >
+      <PrismicPreview repositoryName={repositoryName}>
+        <Component {...pageProps} />
+      </PrismicPreview>
+    </PrismicProvider>
+  )
+}

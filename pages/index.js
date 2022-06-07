@@ -1,9 +1,13 @@
+import Header from "../components/Header"
+import { PrismicText } from '@prismicio/react'
 
-const yaml = require('js-yaml');
-const fs   = require('fs');
-const datasource  = 'data/arcserve.yml'
+// const yaml = require('js-yaml')
+// const fs   = require('fs')
+// const datasource  = 'data/arcserve.yml'
+
 
 // Get document, or throw exception on error
+
 function getPageContent(params) {
     try {
         const content = yaml.load(fs.readFileSync(datasource, 'utf8'))
@@ -14,11 +18,21 @@ function getPageContent(params) {
 }
 
 
+
+
 function Home(params) { 
     return (
         <>
-            <section className="resume">
+
+            <Header context="home" />
+
+            <section id="" className="resume">
                 <div className="container mx-auto">
+                    
+                    {/* <PrismicText  field={data.Title} />
+                    <PrismicText  field={data.IntroText} />
+                    <PrismicText  field={data.About} /> */}
+
                     <h1>E ai! 🤙 sou o<br/>Gustavo Luciano</h1>
                     <p>UX Designer com 10 anos de experiência em Interfaces com background em Front-End, Marketing Digital e Negócios.</p>
                 </div>
@@ -48,7 +62,6 @@ function Home(params) {
                         <div className="portifolio-item">
                             Landing pages para Campanhas de Ingram Micro Brasil
                         </div>
-                    
                 </div>
             </section>
 
